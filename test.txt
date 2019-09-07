@@ -41,14 +41,19 @@ Branching
 One feature = one branch
 
 $ git branch my-feature
+
 $ git checkout master
 $ git commit (x2)
 $
 $ git diff master..my-feature
 $ git merge --no-ff my-feature
 
+# 
 $ git branch center-elements
-$ git branch
+
+# list all branches
+$ git branch -a
+# Switch to branch center-elements
 $ git checkout center-elements
 
 $ git diff index.html
