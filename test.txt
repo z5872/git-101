@@ -1,0 +1,83 @@
+$ git config --global user.name "Zee Xia"
+$ git config --global user.email "zhongweix@yahoo.com"
+
+starting
+$ mkdir new_project
+$ cd new_project
+$ git init
+
+$ mkdir git-101
+cd git-101
+git-101 git init
+
+2 - steps process
+
+#select which file to add to the commit
+$ git add <file_1_which_has_been_modified>
+$ gti add <file_2_which_has_been_modified>
+
+# Tak a snapshot of what is in the staging area
+$ git commit --message "A meaningful message about this change"
+
+$ git add index.html
+$ git commit --message "Basic HTML skeleton for the coming soon page."
+
+$ git diff index.html
+
+$ git add index.html
+$ git add "Welcome Scan.jpg"
+$ git commit -m "Added logo"
+
+log
+Show commit history with git log
+
+$ git log
+$ git lg
+
+lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+
+Branching
+
+One feature = one branch
+
+$ git branch my-feature
+$ git checkout master
+$ git commit (x2)
+$
+$ git diff master..my-feature
+$ git merge --no-ff my-feature
+
+$ git branch center-elements
+$ git branch
+$ git checkout center-elements
+
+$ git diff index.html
+$ git branch
+
+$ git merge --no-ff my-feature
+$ git branch -d center-elements
+
+Push
+Share the code with your team, and the world
+# Generic command
+$ git push <remote> <branch>
+
+# What we'll use
+$ git push origin master
+
+Pull
+# Generic command
+$ git pull <remote> <branch>
+
+# What we'll use
+$ git pull origin master
+
+We need a remote
+Go to GitHub, create a repo:https://github.com/new
+$ git remote add origin https://github.com/<user>/<project>.git
+
+$ git remote -v
+$ git remote add origin https://github.com/z5872/git-101.git
+
+$ git push origin master
+
