@@ -60,6 +60,8 @@ $ git diff index.html
 $ git branch
 
 $ git merge --no-ff my-feature
+
+# Delete branch
 $ git branch -d center-elements
 
 Push
